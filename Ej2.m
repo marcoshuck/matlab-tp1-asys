@@ -1,7 +1,11 @@
-% Análisis de Señales y Sistemas - TP Laboratorio Nº 1
-% Ejercicio 2 - Grupo 6
-% Realizado por Huck Marcos A. y Castelluci Leandro E.
-% Repositorio disponible en: https://github.com/marcoshuck/matlab-tp1-asys
+%{ 
+Análisis de Señales y Sistemas - TP Laboratorio Nº 1
+Ejercicio 3 - Grupo 6
+
+Repositorio disponible en: https://github.com/marcoshuck/matlab-tp1-asys
+
+Realizado por Huck Marcos A. y Castelluci Leandro E.
+%}
 
 % Borramos todas las variables del workspace
 clear all;
@@ -11,12 +15,12 @@ clc;
 clf;
 
 % << INICIO DEL EJERCICIO 2.2 >>
+disp('Ejercicio 2 - Grupo 6 - 2.2');
+
 % Definimos las funciones imaginarias
 syms z w;
 % Definimos las variables reales
 syms u v 'real';
-
-disp('Ejercicio 2 - Grupo 6 - 2.2');
 
 % Asignamos el valor de w.
 w = u + j*v;
@@ -46,13 +50,18 @@ aux = solve(y == 2*x + 4, v);
 
 % << FIN DEL EJERCICIO 2.2 >>
 
+
+
 % Borramos todas las variables del workspace
 clear all;
 
 % Realizamos un salto de línea por cuestión estética
 fprintf('\n');
 
+
+
 % << INICIO DEL EJERCICIO 2.3 >>
+
 % Definimos las funciones imaginarias
 syms z w;
 % Definimos las variables reales

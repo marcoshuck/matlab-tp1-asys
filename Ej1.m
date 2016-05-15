@@ -1,7 +1,11 @@
-% Análisis de Señales y Sistemas - TP Laboratorio Nº 1
-% Ejercicio 1 - Grupo 6
-% Realizado por Huck Marcos A. y Castelluci Leandro E.
-% Repositorio disponible en: https://github.com/marcoshuck/matlab-tp1-asys
+%{ 
+Análisis de Señales y Sistemas - TP Laboratorio Nº 1
+Ejercicio 3 - Grupo 6
+
+Repositorio disponible en: https://github.com/marcoshuck/matlab-tp1-asys
+
+Realizado por Huck Marcos A. y Castelluci Leandro E.
+%}
 
 % Borramos todas las variables del workspace
 clear all;
@@ -9,11 +13,10 @@ clear all;
 clc;
 
 % << INICIO DEL EJERCICIO 1.1 >>
+disp('Ejercicio 1 - Grupo 6 - 1.1');
 
 % Definimos las variables iniciales:
 a = 23.5+10j; b = 33-50j; c = -39.05-79j;
-
-disp('Ejercicio 1 - Grupo 6 - 1.1');
 
 % Operamos según lo solicitado:
 % a)
@@ -30,11 +33,14 @@ fprintf('e) b^(a/12) es igual a: %s\n', num2str(b^(a/12)));
 
 % << FIN DEL EJERCICIO 1.1 >>
 
+
+
 % Realizamos un salto de línea por cuestión estética
 fprintf('\n');
 
-% << INICIO DEL EJERCICIO 1.2 >>
 
+
+% << INICIO DEL EJERCICIO 1.2 >>
 disp('Ejercicio 1 - Grupo 6 - 1.2');
 
 % Número a:
