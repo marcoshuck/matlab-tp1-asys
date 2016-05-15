@@ -1,3 +1,2 @@
-﻿# UTN - FRP
-## Análisis de Señales y Sistemas
-### TP Nº 1 - Matlab
+﻿# UTN - FRP | Análisis de Señales y Sistemas
+Trabajo práctico de Laboratorio Nº 1
