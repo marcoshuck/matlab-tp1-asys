@@ -24,26 +24,39 @@ syms u v 'real';
 
 % Asignamos el valor de w.
 w = u + j*v;
-fprintf('w = %s\n', w);
 
 % Definimos el objeto geométrico
 %x = -50:50;
 %y = 2*x + 4;
 
-fprintf('y = %s', '2*x+4\n');
+disp('Objeto geométrico:');
+fprintf('y = %s\n', '2*x+4');
 
 % Graficamos el objeto geométrico.
 %plot(y);
 
+disp('Mapeo:');
+fprintf('w = %s\n', '3*z + 6');
+
 % Encontramos z para el mapeo dado en la consigna.
 z = solve(w == 3*z + 6, z);
+
 
 % Definimos la parte real y la imaginaria de z
 x = real(z);
 y = imag(z);
 
-% Utilizamos una variable auxiliar para mantener el resultado de
+% Mostramos por pantalla lo que obtuvimos en el punto anterior
+disp('Parte real e imaginaria:');
+fprintf('x = %s\n', x);
+fprintf('y = %s\n', y);
+
+% Utilizamos una variable auxiliar para obtener el resultado de reemplazar
 aux = solve(y == 2*x + 4, v);
+
+% Mostramos por pantalla lo obtenido
+disp('Imagen del objeto geométrico:');
+fprintf('v = %s\n', aux);
 
 % Graficamos la imagen del objeto
 %ezplot(aux);
@@ -61,14 +74,13 @@ fprintf('\n');
 
 
 % << INICIO DEL EJERCICIO 2.3 >>
+disp('Ejercicio 2 - Grupo 6 - 2.3');
 
 % Definimos las funciones imaginarias
 syms z w;
 % Definimos las variables reales
 syms u v 'real';
 syms x y 'real';
-
-disp('Ejercicio 2 - Grupo 6 - 2.3');
 
 % Estado de hold graph desactivado
 hold off;
