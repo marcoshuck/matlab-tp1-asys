@@ -94,7 +94,6 @@ for n = 1:5
     % Mostramos el resultado de aplicar McLaurin
     fprintf('Aplicando McLaurin de orden %d\n f(z) = %s\n', n, simplify(fz));
 end
-%fprintf('Aplicando Taylor de orden 6\n f(z) = %s\n', simplify(fz));
 
 % << FIN DEL EJERCICIO 3.3 >>
 

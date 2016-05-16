@@ -187,5 +187,4 @@ Int = 2 * pi * j * sum(rF);
 fprintf('Integral de F(f): %s\n', IntO);
 fprintf('Integral de F(f) por residuos: %s\n', Int);
 
-
 % << FIN DEL EJERCICIO 4.5 >>
