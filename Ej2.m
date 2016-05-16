@@ -35,6 +35,7 @@ fprintf('y = %s\n', '2*x+4');
 % Graficamos el objeto geométrico.
 %plot(y);
 
+% Mostramos la transformación que aplicaremos
 disp('Mapeo:');
 fprintf('w = %s\n', '3*z + 6');
 
@@ -87,8 +88,16 @@ hold off;
 
 % Definimos el objeto geométrico
 fz = x^2+y^2-9;
+
 % Graficamos el objeto geométrico.
-ezplot(fz);
+%ezplot(fz);
+
+% Mostramos el objeto geométrico
+disp('Objeto geométrico:');
+fprintf('%s = 0\n', fz);
+
+% Asignamos el valor de w.
+w = u + j*v;
 
 % Estado de hold graph activado
 hold on;
@@ -97,12 +106,22 @@ hold on;
 z = solve(w == (z-j)/(z+j), z);
 
 % Definimos la parte real y la imaginaria de z
-x = real(z);
-y = imag(z);
+x = eval(real(z));
+y = eval(imag(z));
 
-fz = solve(fz);
+% Mostramos por pantalla lo que obtuvimos en el punto anterior
+disp('Parte real e imaginaria:');
+fprintf('x = %s\n', x);
+fprintf('y = %s\n', y);
+
+% Reasignamos el valor de la función después de reemplazar.
+fz = eval(fz);
+
+% Mostramos por pantalla lo obtenido
+disp('Imagen del objeto geométrico:');
+fprintf('%s = 0\n', fz);
 
 % Graficamos la imagen del objeto geométrico.
 ezplot(fz);
 
-% << FIN DEL EJERCICIO 2.2 >>
+% << FIN DEL EJERCICIO 2.3 >>
